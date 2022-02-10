@@ -9,3 +9,5 @@
 *.ptc
 NotasLaboratorio-figure*
 *.auxlock
+*-exercise-body.tex
+*.xsim
