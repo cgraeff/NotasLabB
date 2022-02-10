@@ -5,7 +5,7 @@ Na primeira parte, as técnicas de análise de dados são introduzidas e discuti
 
 Na segunda, os experimentos são analisados de um ponto de vista teórico, seguidos dos procedimentos para coleta de dados. Após isso, as equipes de alunos devem responder um questionário. Os experimentos utilizam diferentes técnicas de análise de dados, sendo que à medida que o semestre avança, o número e a complexidade das técnicas envolvidas aumenta. Isso não é completamente linear, no entanto, já que algumas experiências são mais complexas e mais ricas que outras de um ponto de vista de análise dos dados.
 
-Fiz um esforço grande visando obter um texto de fácil compreensão e bem ilustrado, mas sempre restam pontos que podem ficar confusos --~ou posso ter cometido um erro!~--. Se isso acontecer, entre em contato comigo. Sugestões são sempre bem vindas.
+Fiz um esforço grande visando obter um texto de fácil compreensão e bem ilustrado, mas sempre restam pontos que podem ficar confusos (ou posso ter cometido um erro!). Se isso acontecer, entre em contato comigo. Sugestões são sempre bem vindas.
 
 Os arquivos nesse repositório são os códigos-fonte necessários para produzir
 minhas notas de aula de laboratório utilizando LaTeX. Se você deseja obter uma
@@ -33,7 +33,7 @@ tenho ideia de como fazer isso, ou de quanto trabalho isso vai dar.
 ### Como obter uma cópia dos arquivos
 Para obter uma cópia mais facilmente, basta executar em um terminal o comando
 ```
-git clone http://github.com/cgraeff/NotasLab
+git clone git@github.com:cgraeff/NotasLab.git
 ```
 
 ### Pacotes necessários para gerar o arquivo PDF
@@ -95,8 +95,12 @@ o próprio comando pare de pedir para ser executado novamente; em geral são dua
 
 ### Exluir arquivos desnecessários
 Uma maneira simples de excluir os arquivos de log, figuras temporárias, etc, é
-excluir todos os arquivos que não foram adicionados ao git através de
+excluir todos os arquivos que não foram adicionados ao git e arquivos ignorados (excluídos pelos filtros em .gitignore) através de
 ```
 git clean -x
 ```
-
+ou
+```
+git clean -X
+```
+para excluir somente os arquivos ignorados.
