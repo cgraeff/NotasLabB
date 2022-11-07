@@ -1,0 +1,63 @@
+\documentclass[justified,a4paper,symmetric,nobib]{tufte-book}
+
+% Packages setup
+\input{Preamble/Bibliography_fix}
+\input{Preamble/Packages}
+\input{Preamble/Formatting}
+\input{Preamble/Commands}
+
+% Bibliographt file
+\addbibresource{Preamble/References.bib}
+
+% Book metadata
+\title{}
+\author{Clebson Abati Graeff}
+\publisher{Universidade Tecnológica Federal do Paraná\\câmpus Pato Branco}
+\newsavebox{\titleimage}
+\savebox{\titleimage}{\includegraphics[height=10cm]{Ilustrations/AparatoZeroAbs.png}}
+
+\title[Notas de aula de laboratório]{%
+  Notas de aula: \\ Laboratório de Física B \par \vfill
+  \hfill\usebox{\titleimage}}
+  
+\begin{document}
+
+\frontmatter
+\pagestyle{empty}
+
+\input{Front_Matter/Front_Matter}
+
+\mainmatter
+\pagestyle{fancy}
+
+\part{Medidas, Técnicas de Análise de Dados}
+
+\input{Chapters/Erros}
+\input{Chapters/RegressaoNaoLinear}
+\input{Chapters/Desvio_Padrao}
+
+\part{Experimentos}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+ 
+%\input{Experiments/Exp_Modelo}
+\input{Experiments/Exp_Dilatacao_Linear}
+\input{Experiments/Exp_Calor_Especifico}
+\input{Experiments/Exp_Zero_Absoluto}
+
+\printbibliography
+\cleardoublepage
+\thispagestyle{empty}
+\begin{figure*}
+\centering
+\includegraphics[width = 0.5\linewidth]{Ilustrations/AparatoCalorEspecifico.png}
+\end{figure*}
+\vfill
+\begin{fullwidth}
+\begin{center}\sc
+Elaborado usando \LaTeX \\
+documentclass: tufte-book \\
+imagens tratadas usando Gimp \\
+Figuras elaboradas usando tikz
+\end{center}
+\end{fullwidth}
+\end{document}

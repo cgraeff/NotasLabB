@@ -1,5 +1,5 @@
-# Notas de Aula de Laboratório
-Este livro/apostila tem como objetivo facilitar o desenvolvimento das atividades de laboratório de Física da UTFPR-PB. Para isso, todo o conteúdo de análise de dados e os próprios experimentos foram reunidos em um conjunto único. 
+# Notas de Aula de Laboratório B
+Este livro/apostila tem como objetivo facilitar o desenvolvimento das atividades da disciplina de Laboratório de Física B da UTFPR-PB. Para isso, todo o conteúdo de análise de dados e os próprios experimentos foram reunidos em um conjunto único. 
 
 Na primeira parte, as técnicas de análise de dados são introduzidas e discutidas. Nenhuma técnica muito avançada é apresentada, somente o básico, já que o texto é de nível introdutório. Os assuntos cobertos são medidas, erros, erros propagados, gráficos, regressão linear, e um pouco sobre desvio padrão e erros aleatórios.
 
